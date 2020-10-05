@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather app</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cerulean/bootstrap.min.css" />
+  <link rel="stylesheet" href="googleStyle.css" />
+  <script type="text/javascript"
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDT1v6Z6PUyhwRlBUBmoFWStW-Y4QzmdxM"></script>
+</head>
+
+<nav class="navbar navbar-dark bg-primary mb-3">
+  <div class="container">
+    <a href="#" class="navbar-brand">Weather</a>
+  </div>
+</nav>
+
+<body>
+  <div class="container searchContainer" style="margin-top: 30px">
+    <div class="search card card-body">
+      <h1>Enter Your Location</h1>
+      <div class="form-inline">
+        <input type="text" id="searchUser" class="search-box" placeholder="Location" style="height:35px; width:300px">
+        <button class="btn btn-primary" id="submit" style="height:35px; margin-left: 5px">Submit</button>
+        <button class="btn btn-primary" id="submit2" style="height:35px; margin-left: 5px">Weather By Me</button>
+      </div>
+    </div>
+
+    <section class="location" style="margin-top: 20px">
+      <div class="city"></div>
+      <div class="date"></div>
+    </section>
+    <div class="current">
+      <div class="temp"></div>
+      <div class="weather"></div>
+      <div class="hi-low"></div>
+      <div class="humidity"></div>
+      <div class="wind-speed"></div>
+      <div class="coords"></div>
+      <div class="sunrise"></div>
+      <div class="sunset"></div>
+
+
+
+    </div>
+  </div>
+
+  <div id="map-canvas" class="container"></div>
+</body>
+
+<footer style="text-align: center; margin-top: 10px">
+  Hayden Stone
+</footer>
+<script src="googleScript.js"></script>
+<script src="main.js"></script>
+
+</html>
