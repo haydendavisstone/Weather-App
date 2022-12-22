@@ -1,4 +1,4 @@
-const apikey = "95bf897afa33efcdf30861807dc7620e";
+const apikey = "";
 
 const searchbox = document.querySelector('.search-box');
 const button = document.getElementById("submit");
